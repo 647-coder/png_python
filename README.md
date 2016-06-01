@@ -14,3 +14,15 @@ qian的亮度最好大于hou的亮度,否则效果不好.
 运行后生成out为结果.  
 
 ****
+前景图 
+```
+https://github.com/647-coder/png_python/blob/master/qian.jpg
+```
+后景图  
+```
+https://github.com/647-coder/png_python/blob/master/hou.jpg
+```
+合成后  
+```
+https://github.com/647-coder/png_python/blob/master/out.png
+```
