@@ -19,8 +19,8 @@ def createNewImg():
     qihou_img = Image.open(qihou_img_src)
     qihou_W_num, qihou_H_num = qihou_img.size
     out_img = Image.new("RGBA",(qihou_W_num, qihou_H_num))
-    for i in rhouge(0, qihou_W_num):
-        for j in rhouge(0, qihou_H_num):
+    for i in range(0, qihou_W_num):
+        for j in range(0, qihou_H_num):
             avg1 = sum(qihou_img.getpixel((i, j)))/3
             avg2 = sum(hou_img.getpixel((i, j)))/3
             rgb2 = hou_img.getpixel((i, j))
