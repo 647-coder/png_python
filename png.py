@@ -2,26 +2,26 @@ from PIL import Image
 import os
 
 hou_img_src = ""
-qihou_img_src = ""
+qian_img_src = ""
 root=""
-qihou_W_num = 0
-qihou_H_num = 0
+qian_W_num = 0
+qian_H_num = 0
 
 def getAllPhtots():
-    global root, hou_img_src, qihou_img_src
+    global root, hou_img_src, qian_img_src
     root = os.getcwd() + "/"
     hou_img_src = root + 'hou.jpg'
-    qihou_img_src = root + 'qihou.jpg'
+    qian_img_src = root + 'qian.jpg'
 
 def createNewImg():
-    global hou_img_src, qihou_img_src, qihou_W_num, qihou_H_num
+    global hou_img_src, qian_img_src, qian_W_num, qian_H_num
     hou_img = Image.open(hou_img_src)
-    qihou_img = Image.open(qihou_img_src)
-    qihou_W_num, qihou_H_num = qihou_img.size
-    out_img = Image.new("RGBA",(qihou_W_num, qihou_H_num))
-    for i in range(0, qihou_W_num):
-        for j in range(0, qihou_H_num):
-            avg1 = sum(qihou_img.getpixel((i, j)))/3
+    qian_img = Image.open(qian_img_src)
+    qian_W_num, qian_H_num = qian_img.size
+    out_img = Image.new("RGBA",(qian_W_num, qian_H_num))
+    for i in range(0, qian_W_num):
+        for j in range(0, qian_H_num):
+            avg1 = sum(qian_img.getpixel((i, j)))/3
             avg2 = sum(hou_img.getpixel((i, j)))/3
             rgb2 = hou_img.getpixel((i, j))
             avg3 = avg2-avg1+255

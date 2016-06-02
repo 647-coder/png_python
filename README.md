@@ -16,13 +16,13 @@ qian的亮度最好大于hou的亮度,否则效果不好.
 ****
 前景图 
 ```
-![](https://github.com/647-coder/png_python/blob/master/qian.jpg "前景图")
+![image](https://github.com/647-coder/png_python/blob/master/qian.jpg)
 ```
 后景图  
 ```
-![](https://github.com/647-coder/png_python/blob/master/hou.jpg "后景图")
+![image](https://github.com/647-coder/png_python/blob/master/hou.jpg)
 ```
 合成后  
 ```
-![](https://github.com/647-coder/png_python/blob/master/out.png "合成图")
+![image](https://github.com/647-coder/png_python/blob/master/out.png)
 ```
